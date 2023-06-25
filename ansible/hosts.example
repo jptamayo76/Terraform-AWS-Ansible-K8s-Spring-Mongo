@@ -1,0 +1,15 @@
+[master]
+master1 ansible_host=44.203.156.167
+
+[workers]
+worker1 ansible_host=54.147.36.6
+worker2 ansible_host=54.210.166.52
+
+[elastsrv]
+elastsrv1 ansible_host=52.90.175.133
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+ansible_ssh_private_key_file=/home/jptamayo/jpdevopsKeyPair.pem
+ansible_user=ubuntu
